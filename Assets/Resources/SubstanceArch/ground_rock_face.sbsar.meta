@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: ad37f5eea46038f449e4cf5e68f4d0dd
-timeCreated: 1505584641
+timeCreated: 1505586184
 licenseType: Free
 SubstanceImporter:
   serializedVersion: 5
@@ -158,12 +158,12 @@ SubstanceImporter:
     - shaderProp: _MetallicGlossMap
       material: {instanceID: 0}
       baseUID: 326146931
-    - shaderProp: _ParallaxMap
-      material: {instanceID: 0}
-      baseUID: 326146808
     - shaderProp: _OcclusionMap
       material: {instanceID: 0}
       baseUID: 326146759
+    - shaderProp: _ParallaxMap
+      material: {instanceID: 0}
+      baseUID: 326146808
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
@@ -171,6 +171,12 @@ SubstanceImporter:
       textureHeight: 512
       textureFormat: 0
       loadingBehavior: 1
+    - serializedVersion: 2
+      buildTarget: Standalone
+      textureWidth: 512
+      textureHeight: 512
+      textureFormat: 0
+      loadingBehavior: 4
   deletedPrototypes: []
   userData: 
   assetBundleName: 
