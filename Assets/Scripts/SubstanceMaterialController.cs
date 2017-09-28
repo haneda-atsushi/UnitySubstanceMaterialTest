@@ -6,12 +6,16 @@ using UnityEditor;
 
 public class SubstanceMaterialController : MonoBehaviour
 {
-    Renderer             m_Renderer;
+    public GameObject        m_TargetGameObject;
+    Renderer                 m_Renderer;
     List<ProceduralMaterial> m_ProcMaterialList = new List<ProceduralMaterial>();
 
     void Start ()
     {
-        m_Renderer = GetComponent<Renderer>();
+        Assert.IsNotNull( m_TargetGameObject );
+
+        m_Renderer = m_TargetGameObject.GetComponent<Renderer>();
+        Assert.IsNotNull( m_Renderer );
 
         Object[] obj_array = Resources.LoadAll( "SubstanceArch", typeof( UnityEditor.SubstanceArchive ) );
         foreach ( Object obj in obj_array )
